@@ -73,7 +73,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-button" type="button">Заказать услугу</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Наши преимущества -->
@@ -138,31 +140,37 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="item">
-              <a href=""
+              <a class="link" href=""
                 ><img
                   class="no-gap"
                   src="./images/html-coding.jpg"
                   alt="Верстка"
                   width="370"
-              /></a>
+                />
+                <h3 class="services-name">Десктопные приложения</h3></a
+              >
             </li>
             <li class="item">
-              <a href=""
+              <a class="link" href=""
                 ><img
                   class="no-gap"
                   src="./images/mobile-adaptation.jpg"
                   alt="Адаптация под мобильные утройства"
                   width="370"
-              /></a>
+                />
+                <h3 class="services-name">Мобильные приложения</h3></a
+              >
             </li>
             <li class="item">
-              <a href=""
+              <a class="link" href=""
                 ><img
                   class="no-gap"
                   src="./images/styling.jpg"
                   alt="Стилизация"
                   width="370"
-              /></a>
+                />
+                <h3 class="services-name">Дизайнерские решения</h3></a
+              >
             </li>
           </ul>
         </div>
@@ -539,5 +547,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="back-drop is-hidden" data-modal>
+      <div class="modal">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <button class="close-button" type="button" data-modal-close>
+          <svg class="close-icon" width="11" height="11">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
